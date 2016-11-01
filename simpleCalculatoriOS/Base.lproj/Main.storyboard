@@ -227,6 +227,8 @@
                                     <color key="titleColor" red="0.0060405350880000002" green="0.0085816062180000003" blue="0.0051591405309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="countPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Xb-85-lmN"/>
+                                    <action selector="countfunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ekd-UL-UYB"/>
                                     <action selector="equalsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cr-Zn-AII"/>
                                 </connections>
                             </button>
@@ -239,6 +241,7 @@
                                     <color key="titleColor" red="0.0060405350880000002" green="0.0085816062180000003" blue="0.0051591405309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="avgPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyT-y5-SPx"/>
                                     <action selector="equalsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJT-iH-htI"/>
                                 </connections>
                             </button>
@@ -252,6 +255,24 @@
                                 </state>
                                 <connections>
                                     <action selector="equalsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fgf-Rz-REW"/>
+                                    <action selector="factPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7c-08-l83"/>
+                                    <action selector="factorial:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZAt-I2-0az"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQf-Eo-684">
+                                <frame key="frameInset" minX="156" minY="499" width="75" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.70552453542112092" green="0.74230340183131327" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" red="0.0060405350880000002" green="0.0085816062180000003" blue="0.0051591405309999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TqI-8m-gfq"/>
+                                    <action selector="clearScren:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4PF-S0-shA"/>
+                                    <action selector="clearText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgJ-Yd-LpS"/>
+                                    <action selector="countPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFw-VR-E4j"/>
+                                    <action selector="equalsTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yd-gL-fT2"/>
                                 </connections>
                             </button>
                         </subviews>

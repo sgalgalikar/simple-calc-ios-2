@@ -9,12 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
     var isTypingNumber = false
     var firstNumber = 0
     var secondNumber = 0
     var operation = ""
     @IBOutlet weak var calculatorDisplay: UILabel!
-
+    
     @IBAction func equalsTapped(_ sender: AnyObject) {
         isTypingNumber = false
         var result = 0
@@ -39,12 +41,12 @@ class ViewController: UIViewController {
         isTypingNumber = false
         firstNumber = Int(calculatorDisplay.text!)!
         operation = sender.currentTitle!!
-
+        
     }
     
     
     @IBAction func numberTapped(_ sender: AnyObject) {
-        var number = sender.currentTitle
+        let number = sender.currentTitle
         
         if isTypingNumber {
             calculatorDisplay.text = calculatorDisplay.text! + number!!
@@ -59,12 +61,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
